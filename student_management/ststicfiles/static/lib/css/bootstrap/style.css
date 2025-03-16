@@ -1,0 +1,26 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: #000000f1 !important;
+    border-bottom: 1px solid #e9ecef;
+    border-top: 1px solid #e9ecef;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.navbar > a, .navbar .nav-link, .navbar .navbar-brand{
+    color: #ffffff !important;
+}

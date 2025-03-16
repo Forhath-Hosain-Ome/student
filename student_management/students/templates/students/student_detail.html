@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 style="text-align: center;">{{ student.name }}</h1>
+    <p>Email: {{ student.email }}</p>
+    <p>Phone: {{ student.phone }}</p>
+    <p>Course: {{ student.course }}</p>
+    <a href="{% url 'student_update' student.pk %}">Edit</a>
+    <form action="{% url 'student_delete' student.pk %}" method="post" style="display:inline;">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+    </form>
+</div>
+{% endblock %}
